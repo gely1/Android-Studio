@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Evaluacion1</string>
+    <string name="login">Login</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contrasenia">Contraseña</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Nombre">Henry Cavill</string>
+    <string name="User">Administrador</string>
+    <!--FUENTE:  sans-serif-condensed-light -->
+
+    <string name="l">Lunes</string>
+    <string name="mm">Martes</string>
+    <string name="m">Miércoles</string>
+    <string name="j">Jueves</string>
+    <string name="v">Viernes</string>
+    <string name="s">Sábado</string>
+
+    <string name="lu">8:00am - 2:00pm</string>
+    <string name="ma">8:00am - 2:00pm</string>
+    <string name="mi">8:00am - 2:00pm</string>
+    <string name="ju">8:00am - 2:00pm</string>
+    <string name="vi">8:00am - 2:00pm</string>
+    <string name="sa">-- -- -- --</string>
+
+    <string name="ventas">Ventas</string>
+    <string name="sabritas">Sabritas</string>
+    <string name="leche">Leche</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="sab">2</string>
+    <string name="le">1</string>
+    <string name="ce">4</string>
+    <string name="agregar">Agregar Venta</string>
+    <string name="nom">Nombre</string>
+    <string name="cantidad">Cantidad</string>
+
+    <string name="emp">Empleados</string>
+    <string name="juana">Juana García</string>
+    <string name="miguel">Miguel Flores</string>
+    <string name="sofi">Sofía Martinez</string>
+    <string name="eliminar">Eliminar</string>
+
+
+
+
+</resources>

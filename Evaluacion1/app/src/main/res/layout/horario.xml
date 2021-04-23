@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu"
+        android:background="@drawable/rectangulo"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="186dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:paddingLeft="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:text="@string/Nombre"
+                android:textColor="@color/letras"
+                android:textSize="@dimen/titulos" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:paddingLeft="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:text="@string/User"
+                android:textColor="@color/letras"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/fotoperfil"
+            android:layout_height="@dimen/fotoperfil"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="0.3"
+            android:background="@drawable/henry"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/henry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingLeft="@dimen/padding"
+            android:text="Horario"
+            android:textSize="@dimen/texto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/l"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/lu"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mm"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/ma"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/m"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/mi"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/j"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/ju"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/v"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/vi"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/campos"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/s"
+                android:textSize="@dimen/texto" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/sa"
+                android:textSize="@dimen/texto" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

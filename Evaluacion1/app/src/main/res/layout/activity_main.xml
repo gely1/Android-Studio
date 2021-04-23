@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/login"
+        android:textColor="@color/letras"
+        android:textSize="@dimen/titulos"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/campos"
+        android:background="@drawable/redondo"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/padding"
+        android:text="@string/Usuario"
+        android:textColor="@color/letradecampo"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/campos"
+        android:background="@drawable/redondo"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/padding"
+        android:text="@string/Contrasenia"
+        android:textColor="@color/letradecampo"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo"
+        android:backgroundTint="@color/botones"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/Entrar"
+        android:textColor="@color/letras"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

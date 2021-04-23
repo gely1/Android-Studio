@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="campos">35sp</dimen>
+    <dimen name="titulos">35sp</dimen>
+    <dimen name="texto">25sp</dimen>
+    <dimen name="padding">10sp</dimen>
+    <dimen name="menu">130sp</dimen>
+    <dimen name="fotoperfil">80sp</dimen>
+    <dimen name="margin">20sp</dimen>
+</resources>
