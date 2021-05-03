@@ -12,16 +12,21 @@ import com.example.covid.ui.main.SectionsPagerAdapter
 
 class Tabs : AppCompatActivity() {
 
+    lateinit var tabs: TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tabs)
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-        val viewPager: ViewPager = findViewById(R.id.view_pager)
+        val viewPager: ViewPager = this.findViewById(R.id.view_pager)
         viewPager.adapter = sectionsPagerAdapter
-        val tabs: TabLayout = findViewById(R.id.tabs)
+        tabs = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
-        val fab: FloatingActionButton = findViewById(R.id.fab)
 
 
+
+    }
+    fun cargarIconos(){
+        tabs.getTabAt(0)?.setIcon(android.R.drawable.ic_dialog_alert)
+        tabs.getTabAt(1)?.setIcon(android.R.drawable.ic_dialog_alert)
     }
 }
