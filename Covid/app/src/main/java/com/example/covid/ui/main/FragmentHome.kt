@@ -1,5 +1,7 @@
 package com.example.covid.ui.main
 
+import adapters.AdapterFavorito
+import adapters.AdapterPais
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
@@ -7,7 +9,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.covid.R
+import models.Favorito
+import models.Pais
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -43,7 +49,34 @@ class FragmentHome : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        var view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        var recyclerViewFav = view.findViewById<RecyclerView>(R.id.recyclerViewFavoritos)
+        recyclerViewFav.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL, false)
+        var favoritos=ArrayList<Favorito>()
+        favoritos.add(Favorito("Costa Rica", "mexico.png"))
+        favoritos.add(Favorito("Puelto Lico", "mexico.png"))
+        favoritos.add(Favorito("Zambia", "mexico.png"))
+        favoritos.add(Favorito("Cuba Chico", "mexico.png"))
+        val adapter1= AdapterFavorito(favoritos)
+        recyclerViewFav.adapter = adapter1
+
+
+
+        var recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewPaises)
+        recyclerView.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
+        var paises=ArrayList<Pais>()
+        paises.add(Pais("México", "mexico.png", 120.00))
+        paises.add(Pais("EUA", "mexico.png", 120.00))
+        paises.add(Pais("JAPON", "mexico.png", 120.00))
+        paises.add(Pais("KOREA", "mexico.png", 120.00))
+        paises.add(Pais("BRASIL", "mexico.png", 120.00))
+        val adapter= AdapterPais(paises)
+        recyclerView.adapter = adapter
+
+
+
+        return view
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -47,5 +47,22 @@
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+        <TextView
+                android:text="@string/fav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp" android:textSize="18sp" android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/recyclerViewFavoritos"
+        />
+        <TextView
+                android:text="@string/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp" android:textSize="18sp" android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/recyclerViewPaises"/>
     </LinearLayout>
 </FrameLayout>
