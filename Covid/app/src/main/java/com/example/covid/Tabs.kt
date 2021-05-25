@@ -1,6 +1,8 @@
 package com.example.covid
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
@@ -10,15 +12,24 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.example.covid.ui.main.SectionsPagerAdapter
+import com.google.zxing.integration.android.IntentIntegrator
+import kotlinx.android.synthetic.main.activity_tabs.view.*
 
 class Tabs : AppCompatActivity() {
 
     lateinit var tabs: TabLayout
+    private lateinit var binding: ActivityTabsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tabs)
         setSupportActionBar( findViewById(R.id.toolbar))
         supportActionBar?.setLogo(R.drawable.virus)
+        binding = ActivityTabsBinding.inflate(LayoutInflater)
+        setContentView(binding.root)
+        binding.btnScanner.setOnClickListener(
+            initScaner()
+        )
+
 
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         val viewPager: ViewPager = this.findViewById(R.id.view_pager)
@@ -29,7 +40,32 @@ class Tabs : AppCompatActivity() {
 
 
     }
+    private fun initScaner(){
+        //IntentIntegrator(this).initiateScan()
+        var integrator = IntentIntegrator(this)
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
+        integrator.setPrompt("Escanea el covid19 app para info")
+        integrator.setTorchEnabled(true)
+        integrator.setBeepEnabled(true)
+        integrator.initiateScan()
 
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
+        if(result != null){
+            if(result.contents == null){
+                Toast.makeText(applicationContext, "Cancelado", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(applicationContext, "El valor escaneado es "+result.contents, Toast.LENGTH_LONG).show()
+                if(result.contents.equals("http://itsncg.edu.mx")){
+
+                }
+            }
+        }else{
+            super.onActivityResult(requestCode, resultCode, data)
+        }
+    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_principal, menu)
         return true
@@ -38,6 +74,7 @@ class Tabs : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when( item.itemId){
             R.id.camera_menu->{
+                initScaner()
                 Toast.makeText(applicationContext, "Hola", Toast.LENGTH_LONG).show()
                 true
             }

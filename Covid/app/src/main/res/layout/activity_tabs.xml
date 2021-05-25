@@ -25,4 +25,8 @@
     </LinearLayout>
     <include android:Layout_width="match_perent" android:Layout_height="wrap_content"
              android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnScanner"/>
 </android.support.design.widget.CoordinatorLayout>
