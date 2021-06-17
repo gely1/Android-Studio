@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppSobreMi</string>
+    <string name="tab_text_1">Música</string>
+    <string name="tab_text_2">Anime</string>
+    <string name="tab_text_3">Random</string>
+    <string name="Musica">Este es mi Top 5 de Canciones</string>
+    <string name="Anime">Estos son los 5 Animes que más disfruté ver</string>
+    <string name="Random">Y este es otro contenido que consumo en Youtube</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

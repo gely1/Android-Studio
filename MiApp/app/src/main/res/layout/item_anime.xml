@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/AnimeAncho"
+    android:layout_height="@dimen/AnimeAlto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margenTitulo"
+    android:backgroundTint="@color/gris"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/imagena"
+        android:layout_width="@dimen/imgAnimeancho"
+        android:layout_height="@dimen/imgAnimealto"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margenTitulo" />
+
+    <TextView
+        android:id="@+id/anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Margen"
+        android:text="Jujutsu Kaisen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titulo" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="@dimen/AnimeAncho"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Margendos"
+        android:padding="@dimen/margenImgCancion"
+        android:text="Un anime que trata de tres brujos que luchan contra maldiciones"
+        android:textColor="@color/white"
+        android:textSize="@dimen/descripcion" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisecito"
+    tools:context=".anime">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margenTitulo"
+        android:text="@string/tab_text_2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titulo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margenDescripcion"
+        android:text="@string/Anime"
+        android:textColor="@color/black"
+        android:textSize="@dimen/descripcion" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAnimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margenContenido" />
+
+</FrameLayout>

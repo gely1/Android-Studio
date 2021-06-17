@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/RandomAncho"
+    android:layout_height="@dimen/RandomAlto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margenTitulo"
+    android:background="@drawable/redondo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivRandom"
+            android:layout_width="@dimen/imgRandomancho"
+            android:layout_height="@dimen/imgRandomAlto"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margenTitulo"
+            android:foregroundGravity="center_horizontal"
+            tools:srcCompat="@drawable/pulso" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margenTitulo"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nombrer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/CancionAlto"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/descripcionr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/CancionAlto"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

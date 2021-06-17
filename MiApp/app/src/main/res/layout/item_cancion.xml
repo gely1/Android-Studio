@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/CancionAncho"
+    android:layout_height="@dimen/CancionAlto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margenTitulo"
+    android:backgroundTint="@color/grisecito"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="@dimen/imgCancion"
+        android:layout_height="@dimen/imgCancion"
+        android:layout_margin="@dimen/margenImgCancion" />
+
+    <TextView
+        android:id="@+id/artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margenTitulo"
+        android:layout_marginTop="@dimen/margenDescripcion"
+        android:text="Calle 13"
+        android:textSize="@dimen/descripcion" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margenTitulo"
+        android:layout_marginTop="@dimen/margenTitulo"
+        android:text="La vuelta al mundo"
+        android:textSize="@dimen/titulo" />
+</androidx.cardview.widget.CardView>
